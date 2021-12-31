@@ -1,0 +1,136 @@
+ /*===========================
+    01. Banner CSS 
+    ===========================*/
+
+    .projectsPage-banner-section {
+      position: relative;
+      margin-top: 125px;
+      background-image:url(../img/foto1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      animation: fade-out 30s infinite;
+    }
+
+    @keyframes fade-out {
+      0% {
+        background-image:url(../img/foto1.png);
+      }
+      33%{
+        background-image:url(../img/foto2.png);
+      }
+      67% {
+        background-image:url(../img/foto1.png);
+      }
+    }
+
+    .projectsPage-banner-section .projectsPage-banner-wrapper h2{
+      color: #0082b8;
+      /*background-color: rgba(0,0,0,0.5);*/
+      padding: 100px;
+    }
+
+    .projectsPage-banner-section .projectsPage-banner-wrapper h2:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 35px;
+      height: 6px;
+      margin-top: 8px;
+      border-radius: 100px;
+      background-color: #bbde16;
+      text-shadow: 2px 2px 5px #616161;
+    }
+
+    /*===========================
+    02. Project with image right CSS 
+    ===========================*/
+
+    .projectsPage-projects-right .container {
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+
+    .projectsPage-projects-right .content h3{
+      margin-bottom: 25px;
+      color: #0082b8;
+    }
+
+    .projectsPage-projects-right .content p{
+      margin-bottom: 25px;
+    }
+
+    .projectsPage-projects-right .content .learn-btn {
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      user-select: none;
+      padding: 16px 48px;
+      font-size: 18px;
+      border-radius: 50px;
+      color:  #ffff;
+      cursor: pointer;
+      z-index: 5;
+      transition: all .4s ease-in-out;
+      border: none;
+      background: #36bccb;
+      overflow: hidden;
+    }
+
+    .projectsPage-projects-right .content .learn-btn:hover, .learn-btn:focus {
+     background: #0082b8;
+   }
+
+   .projectsPage-projects-right img{
+    margin-bottom: 35px;
+  }
+
+     /*===========================
+    02. Project with image left CSS 
+    ===========================*/
+    .projectsPage-projects-left {
+      background-color: #edfdff;
+    }
+
+    .projectsPage-projects-left .container {
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+
+    .projectsPage-projects-left .content h3{
+      margin-bottom: 25px;
+      color: #0082b8;
+    }
+
+    .projectsPage-projects-left .content p{
+      margin-bottom: 25px;
+    }
+
+    .projectsPage-projects-left .content .learn-btn {
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      user-select: none;
+      padding: 16px 48px;
+      font-size: 18px;
+      border-radius: 50px;
+      color:  #ffff;
+      cursor: pointer;
+      z-index: 5;
+      transition: all .4s ease-in-out;
+      border: none;
+      background: #36bccb;
+      overflow: hidden;
+    }
+
+    .projectsPage-projects-left .content .learn-btn:hover, .learn-btn:focus {
+     background: #0082b8;
+   }
+
+   .projectsPage-projects-left img{
+    margin-bottom: 35px;
+  }

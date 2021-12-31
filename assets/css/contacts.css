@@ -1,0 +1,183 @@
+/*================================================================================================================================
+    CONTACTS PAGE
+    ==================================================================================================================================*/
+
+/*===========================
+    01. Form
+    ===========================*/
+
+/*===== INPUT and TEXTAREA =====*/
+
+h3{
+    margin-bottom: 30px;
+    color: #0082b8;
+}
+
+#Board{
+    margin: auto auto auto auto;
+    width: 28%;
+    padding: 10px;
+}
+
+.container .formBx{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .formBx form{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+}
+
+.container .formBx form .inputBox{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.container .formBx form .inputBox textarea,
+.container .formBx form .inputBox input[type="text"],
+.container .formBx form .inputBox input[type="email"]{
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #0082b8;
+    resize: none;
+}
+
+.container .formBx form .inputBox textarea{
+    height: 100px;
+}
+
+.container .formBx form .inputBox span{
+    position: absolute;
+    display: inline-block;
+    pointer-events: none;
+    transition: all 0.2s;
+    left: 0;
+}
+
+.container .formBx form .inputBox textarea:focus ~ span,
+.container .formBx form .inputBox input[type="text"]:focus ~ span,
+.container .formBx form .inputBox input[type="email"]:focus ~ span,
+.container .formBx form .inputBox textarea:valid ~ span,
+.container .formBx form .inputBox input[type="text"]:valid ~ span,
+.container .formBx form .inputBox input[type="email"]:valid ~ span{
+    transform: translateY(-24px);
+    color: #bbde16;
+}
+
+#location{
+    margin-bottom: 20px;
+}
+
+
+/*===== PERSONAL CARD =====*/
+
+.wrapper{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+}
+
+.personal-card{
+    width: 240px;
+    height: 300px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.personal-card:hover{
+    transform: translateY(20px);
+}
+
+.personal-card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #0082b8 0%, #bbde16 100%);
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.personal-card:hover:before{
+    opacity: 0.5;
+}
+
+.personal-card img{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.personal-card .socials{
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: 0.5s all;
+}
+
+.personal-card:hover .socials {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#card-1{
+    width: 240px;
+}
+
+#card-2{
+    width: 240px;
+}
+
+#card-3{
+    width: 240px;
+}
+
+#card-1 h6{
+    margin: auto;
+    width: 70%;
+}
+
+#card-2 h6{
+    margin: auto;
+    width: 70%;
+}
+
+#card-3 h6{
+    margin: auto;
+    width: 40%;
+}
+
+#card-1 h7{
+    margin-left: 30%;
+}
+
+body > div.container > div:nth-child(3) > div> div > a > svg{
+    width: 20px;
+    height: auto;
+    margin-left: 30px;
+    color: #bbde16;
+}
+
+body > div.container > div:nth-child(3) > div> div > a > svg:hover{
+    color: #edfdff;
+}
