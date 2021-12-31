@@ -471,11 +471,12 @@
     .bestCoimbra-section .bestCoimbra-content-wrapper .bestCoimbra-content p{
       margin-bottom: 15px;
     }
+
     /*===========================
-    04. Contacts CSS 
+    05. Contacts CSS 
     ===========================*/
     .contacts{
-      margin-top: 90px;
+      margin-top: 110px;
     }
 
     .contacts .contacts-wrapper h2{
@@ -504,35 +505,36 @@
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 0.3s;
+    margin: 10px;
   }
 
-.contacts .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
+  .contacts .member .member-img {
+    position: relative;
+    overflow: hidden;
+  }
 
-.contacts .member .member-img:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
-  background-size: contain;
-  z-index: 1;
-}
+  .contacts .member .member-img:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/team-shape.svg) no-repeat center bottom;
+    background-size: contain;
+    z-index: 1;
+  }
 
-.contacts .member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-}
+  .contacts .member .social {
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+  }
 
 .contacts .member .social a {
   transition: color 0.3s;
@@ -562,6 +564,16 @@
   color: #012970;
 }
 
+.contacts .member .member-info h4:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    height: 4px;
+    margin-top: 5px;
+    background-color: #bbde16;
+}
+
 .contacts .member .member-info span {
   display: block;
   font-size: 14px;
@@ -586,3 +598,54 @@
   right: 8px;
   opacity: 1;
 }
+
+    /*===========================
+    06. Gallery CSS 
+    ===========================*/
+  .gallery{
+      margin-top: 110px;
+    }
+
+    .gallery .gallery-wrapper img{
+      transition: 0.3s;
+    }
+
+    .gallery .gallery-wrapper h2{
+      color: #0082b8;
+    }
+
+    .gallery .gallery-wrapper h2:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 24px;
+      height: 4px;
+      margin-top: 10px;
+      background-color: #bbde16;
+      margin-bottom: 15px;
+    }
+
+    .gallery .row{
+      justify-content: center;
+    }
+    
+    .gallery .gallery-wrapper .row:hover img{
+     filter: grayscale(1);
+    }
+
+    .gallery .gallery-wrapper .row img:hover{
+     filter: grayscale(0);
+     transform: scale(1.1);
+    }
+
+    .gallery .container-wrap{
+      padding: 15px;
+    }
+
+    .gallery .carousel-indicators button{
+      background: darkred;
+      height: 7px;
+      width: 100px;
+      border: 0;
+      border-radius: 10px;
+    }

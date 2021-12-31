@@ -40,54 +40,6 @@
 	});
 	wow.init();
 
-	//======== tiny slider
-	tns({
-		container: '.partners-carousel',
-		autoplay: true,
-		autoplayButtonOutput: false,
-		mouseDrag: true,
-		gutter: 15,
-		nav: false,
-		controls: false,
-		responsive: {
-			0: {
-				items: 1,
-			},
-			540: {
-				items: 2,
-			},
-			768: {
-				items: 3,
-			},
-			992: {
-				items: 4,
-			}
-		}
-	});
-
-	tns({
-		container: '.testimonials-carousel',
-		autoplay: true,
-		autoplayButtonOutput: false,
-		mouseDrag: true,
-		gutter: 15,
-		nav: false,
-		controls: false,
-		autoplayTimeout:7000,
-		responsive: {
-			0: {
-				items: 1,
-			},
-			768: {
-				items: 2,
-			},
-			992: {
-				items: 3,
-			},
-		}
-	});
-	
-
 })();
 
 
