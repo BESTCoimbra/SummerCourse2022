@@ -627,11 +627,21 @@
 
     .gallery .row{
       justify-content: center;
+      
     }
+
     
     .gallery .gallery-wrapper .row:hover img{
      filter: grayscale(1);
     }
+    .gallery .gallery-wrapper .row img{
+     margin-bottom: 1rem !important;
+    }
+
+    /*
+    .gallery .gallery-wrapper .row:hover img{
+     filter: grayscale(1);
+    }*/
 
     .gallery .gallery-wrapper .row img:hover{
      filter: grayscale(0);
@@ -648,4 +658,5 @@
       width: 100px;
       border: 0;
       border-radius: 10px;
+      transform: translateY(0.7rem);
     }
