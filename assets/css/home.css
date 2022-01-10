@@ -4,120 +4,102 @@
 
 ===========================
     01. Hero CSS
-    ===========================*/
+===========================*/
 
-   /* .hero-section .row{
-      background-color: red;
-    }
+.hero-section {
+  position: relative;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
 
-    .hero-section .hero-content-wrapper{
-      background-color: pink;
-    }
+.hero-section .hero-img {
+  top: 50%;
+  width: 110%;
+}
 
-    .hero-section .col_test{
-      background-color: green;
-    }
-
-    .hero-section {
-      background-color: white;
-    }*/
-    /*===== Hero =====*/
-
-    .hero-section {
-      position: relative;
-      height: 700px;
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-section .hero-img {
-      top: 50%;
-      width: 110%;
-    }
-
-    @media only screen and (min-width: 1440px) {
-      .hero-section {
-        margin-top: 70px;
-      }
-    }
-
-    @media only screen and (min-width: 1400px) and (max-width: 1440px) {
-      .hero-section {
-        margin-top: 65px;
-      }
-    }
-
-    @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-      .hero-section {
-        height: 600px;
-        margin-top: 75px;
-      }
-    }
-
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .hero-section {
-        height: 580px;
-        margin-top: 75px;
-      }
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 992px), (max-width: 768px) {
-      .hero-section {
-        height: auto;
-        padding-top: 100px;
-      }
-    }
-
-    .hero-section .hero-content-wrapper h2 {
-      font-weight: 700;
-      font-size: 25px;
-      line-height: 50px;
-      color: #36bccb;
-      margin-bottom: 0;
-    }
-
-    .hero-section .hero-content-wrapper h1 {
-      font-weight: bold;
-      font-size: 50px;
-      line-height: 65px;
-      color: #051441;
-      margin-bottom: 25px;
-    }
-
-    @media only screen and (min-width: 1440px) {
-      .hero-section .hero-content-wrapper h2 {
-        padding-top: 0px;/*DELETE*/
-      }
-      .hero-section .hero-img {
-        transform: translateX(+35%);
-      }
-    }
-
-    @media only screen and (min-width: 1200px) and (max-width: 1440px){
-     .hero-section .hero-content-wrapper h2 {
-      padding-top: 0px;
-     }
-     .hero-section .hero-img {
-        transform: translateX(+35%);
-      }
-    }
-
-    @media only screen and (min-width: 992px) and (max-width: 1200px){
-     .hero-section .hero-content-wrapper h2 {
-      padding-top: 0px;
-    }
-    .hero-section .hero-content-wrapper h1 {
-      margin-bottom: 15px;
-    }
+@media only screen and (min-width: 1440px) {
+  .hero-section {
+    margin-top: 70px;
   }
+}
 
-    @media only screen and (min-width: 992px) and (max-width: 1050px){
-      .hero-section .hero-img {
-        width: 95%;
-      }
+@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+  .hero-section {
+    margin-top: 65px;
   }
+}
 
-@media only screen and (min-width: 992px) and (max-width: 1200px), only screen and (min-width: 1200px) and (max-width: 1440px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .hero-section {
+    height: 600px;
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .hero-section {
+    height: 580px;
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px),
+(max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding-top: 100px;
+  }
+}
+
+.hero-section .hero-content-wrapper h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 50px;
+  color: #36bccb;
+  margin-bottom: 0;
+}
+
+.hero-section .hero-content-wrapper h1 {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 65px;
+  color: #051441;
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-section .hero-img {
+    transform: translateX(+35%);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .hero-section .hero-content-wrapper h2 {
+    padding-top: 0px;
+  }
+  .hero-section .hero-img {
+    transform: translateX(+35%);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .hero-section .hero-content-wrapper h2 {
+    padding-top: 0px;
+  }
+  .hero-section .hero-content-wrapper h1 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1050px) {
+  .hero-section .hero-img {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px),
+only screen and (min-width: 1200px) and (max-width: 1440px) {
   .hero-section .hero-content-wrapper h1 {
     font-size: 45px;
     line-height: 60px;
@@ -139,7 +121,8 @@
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px), (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px),
+(max-width: 768px) {
   .hero-section .hero-img {
     position: relative;
     width: 100%;
@@ -169,372 +152,469 @@
   width: 100%;
 }
 
+
 /*===========================
     02. course CSS 
-    ===========================*/
-    .course-section{
-       filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.3)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.22));
-    }
+===========================*/
 
-    .course-section .container-wrap{
-      background: #edfdff;
-      padding: 70px 0;
-      position: relative;
-      clip-path: polygon(0 0,100% 12%,100% 88%,0 100%);
-      margin-top: 10px;
-    }
+.course-section {
+  /* filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.3)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.22));*/
+}
 
-    .course-section .course-img-wrapper {
-      left: 0;
-      width: 90%;
-    }
+.course-section .container-wrap {
+  background: #edfdff;
+  padding: 70px 0;
+  position: relative;
+  clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%);
+  margin-top: 10px;
+}
 
-    @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-      .course-section .course-img-wrapper {
-        width: 100%;
-      }
-      .course-section {
-        padding: 80px 0;
-      }
-      .course-section .container{
-        padding: 10px 0;
-      }
-    }
+.course-section .course-img-wrapper {
+  left: 0;
+  width: 90%;
+}
 
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .course-section .container{
-        padding: 15px 0;
-      }
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .course-section {
-        padding: 110px 0;
-      }
-      .course-section .container{
-        padding: 15px 0;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .course-section {
-        padding: 70px 0;
-      }
-
-      .course-section .container-wrap{
-        clip-path: unset;
-        padding: 30px 0;
-      }
-
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .course-section .course-img-wrapper {
-        position: relative;
-        top: 0;
-        width: 70%;
-        margin-bottom: 50px;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .course-section .course-img-wrapper {
-        position: relative;
-        top: 0;
-        transform: translateY(0);
-        width: 100%;
-        margin-bottom: 50px;
-      }
-    }
-
-    .course-section .course-img-wrapper img {
-      width: 100%;
-    }
-
-    .course-section .course-content-wrapper .section-title h2{
-      color: #0082b8;
-    }
-
-    .course-section .course-content-wrapper .course-content p{
-      margin-bottom: 15px;
-    }
-
-
-    /*===========================
-    03.Coimbra CSS 
-    ===========================*/
-
-    .coimbra{
-      position: relative;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .coimbra .content {
-      margin-top: 10px;
-      background-color: #edfdff;
-      padding: 35px;
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }
-
-    .coimbra .content h3{
-      font-weight: 700;
-      font-size: 25px;
-      line-height: 50px;
-      color: #36bccb;
-      margin-bottom: 0;
-    }
-
-    .coimbra img.dot-shape {
-      width: 20%;
-      position: relative;
-      left:-30px;
-      bottom: 30px;
-      z-index: 1;
-    }
-
-    .coimbra .image img{
-       height: 100%;
-    }
-
-    .coimbra .image{
-       filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.3)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.22));
-    }
-
-    .coimbra .content p{
-      margin-bottom: 10px;
-    }
-
-    @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-      .coimbra img.dot-shape {
-      display: none;
-      }
-
-      .coimbra .content {
-      margin-top: 5px;
-      padding: 30px;
-      margin-bottom: 5px;
-      }
-
-      .coimbra .image img{
-       width: 530px;
-       object-fit: cover; object-position: 0 100%;
-    }
-    }
-
-
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .coimbra .content {
-      margin-top: 5px;
-      padding: 20px;
-      margin-bottom: 5px;
-      }
-
-      .coimbra img.dot-shape {
-      display: none;
-      }
-
-      .coimbra .image img{
-       width: 450px;
-       object-fit: cover; object-position: 0 100%;
-    }
-    }
-
-    @media(max-width: 992px) {
-      .coimbra img.dot-shape {
-      display: none;
-      z-index: initial;
-      }
-    }
-
-    @media(max-width: 991px) {
-      .coimbra .content {
-        margin-top: unset;
-        padding: 20px;
-        box-shadow: none;
-      }
-      
-      .coimbra .content h3{
-      font-size: 20px;
-      }
-      .coimbra p{
-      font-size: 12px;
-      line-height: 15px;
-      }
-
-      .coimbra .image{
-      padding-left: 20px;
-      padding-right: 20px;
-      background-color: #edfdff;
-      filter: unset;
-      padding-bottom: 20px;
-      }
-      .coimbra .container{
-        filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.3)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.22));
-      }
-    }
-
-    /*===========================
-    04. bestCoimbra CSS 
-    ===========================*/
-    .bestCoimbra-section{
-       filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.3)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.22));
-    }
-
-    .bestCoimbra-section .container-wrap{
-      background: #edfdff;
-      padding: 70px 0;
-      position: relative;
-      clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
-      margin-top: 10px;
-    }
-
-    .bestCoimbra-section .bestCoimbra-img-wrapper {
-      left: 0;
-      width: 90%;
-    }
-
-    @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-      .bestCoimbra-section .bestCoimbra-img-wrapper {
-        width: 100%;
-      }
-      .bestCoimbra-section {
-        padding: 80px 0;
-      }
-      .bestCoimbra-section .container{
-        padding: 10px 0;
-      }
-    }
-
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .bestCoimbra-section .container{
-        padding: 15px 0;
-      }
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .bestCoimbra-section {
-        padding: 110px 0;
-      }
-      .bestCoimbra-section .container{
-        padding: 15px 0;
-      }
-      .bestCoimbra-section .bestCoimbra-content-wrapper .section-title h2{
-      text-align: right;
-      }
-
-    }
-
-    @media (max-width: 767px) {
-      .bestCoimbra-section {
-        padding: 70px 0;
-
-      }
-
-      .bestCoimbra-section .container-wrap{
-        clip-path: unset;
-        padding: 30px 0;
-      }
-
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .bestCoimbra-section .bestCoimbra-img-wrapper {
-        position: relative;
-        top: 0;
-        width: 70%;
-        margin-bottom: 50px;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .bestCoimbra-section .bestCoimbra-img-wrapper {
-        position: relative;
-        top: 0;
-        transform: translateY(0);
-        width: 100%;
-        margin-bottom: 50px;
-      }
-    }
-
-    .bestCoimbra-section .bestCoimbra-img-wrapper img {
-      width: 100%;
-    }
-
-    .bestCoimbra-section .bestCoimbra-content-wrapper .section-title h2{
-      color: #0082b8;
-    }
-
-    .bestCoimbra-section .bestCoimbra-content-wrapper .bestCoimbra-content p{
-      margin-bottom: 15px;
-    }
-
-    /*===========================
-    05. Contacts CSS 
-    ===========================*/
-    .contacts{
-      margin-top: 110px;
-    }
-
-    .contacts .contacts-wrapper h2{
-      color: #0082b8;
-    }
-
-    .contacts .contacts-wrapper h2:after {
-      content: '';
-      display: block;
-      margin: 0 auto;
-      width: 24px;
-      height: 4px;
-      margin-top: 10px;
-      background-color: #bbde16;
-      margin-bottom: 15px;
-    }
-
-    .contacts .row{
-      justify-content: center;
-    }
-
-  .contacts .member {
-    overflow: hidden;
-    text-align: center;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    transition: 0.3s;
-    margin: 10px;
-  }
-
-  .contacts .member .member-img {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .contacts .member .member-img:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    height: 100%;
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .course-section .course-img-wrapper {
     width: 100%;
-    background: url(../img/team-shape.svg) no-repeat center bottom;
-    background-size: contain;
-    z-index: 1;
   }
+  .course-section {
+    padding: 80px 0;
+  }
+  .course-section .container {
+    padding: 10px 0;
+  }
+}
 
-  .contacts .member .social {
-    position: absolute;
-    right: -100%;
-    top: 30px;
-    opacity: 0;
-    border-radius: 4px;
-    transition: 0.5s;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: 2;
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .course-section .container {
+    padding: 15px 0;
   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .course-section {
+    padding: 110px 0;
+  }
+  .course-section .container {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .course-section {
+    padding: 70px 0;
+  }
+  .course-section .container-wrap {
+    clip-path: unset;
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .course-section .course-img-wrapper {
+    position: relative;
+    top: 0;
+    width: 70%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .course-section .course-img-wrapper {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.course-section .course-img-wrapper img {
+  width: 100%;
+}
+
+.course-section .course-content-wrapper .section-title h2 {
+  color: #0082b8;
+}
+
+.course-section .course-content-wrapper .course-content p {
+  margin-bottom: 15px;
+}
+
+
+/*===========================
+    03.Coimbra CSS 
+===========================*/
+
+.coimbra {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coimbra .content {
+  margin-top: 10px;
+  background-color: #edfdff;
+  padding: 35px;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
+}
+
+.coimbra .content h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 50px;
+  color: #36bccb;
+  margin-bottom: 0;
+}
+
+.coimbra img.dot-shape {
+  width: 20%;
+  position: relative;
+  left: -30px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+.coimbra .image img {
+  height: 100%;
+}
+
+.coimbra .image {
+  /* filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.3)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.22));*/
+}
+
+.coimbra .content p {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .coimbra img.dot-shape {
+    display: none;
+  }
+  .coimbra .content {
+    margin-top: 5px;
+    padding: 30px;
+    margin-bottom: 5px;
+  }
+  .coimbra .image img {
+    width: 530px;
+    object-fit: cover;
+    object-position: 0 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .coimbra .content {
+    margin-top: 5px;
+    padding: 20px;
+    margin-bottom: 5px;
+  }
+  .coimbra img.dot-shape {
+    display: none;
+  }
+  .coimbra .image img {
+    width: 450px;
+    object-fit: cover;
+    object-position: 0 100%;
+  }
+}
+
+@media(max-width: 992px) {
+  .coimbra img.dot-shape {
+    display: none;
+    z-index: initial;
+  }
+}
+
+@media(max-width: 991px) {
+  .coimbra .content {
+    margin-top: unset;
+    padding: 20px;
+    box-shadow: none;
+  }
+  .coimbra .content h3 {
+    font-size: 20px;
+  }
+  .coimbra p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .coimbra .image {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #edfdff;
+    filter: unset;
+    padding-bottom: 20px;
+  }
+  .coimbra .container {
+    /*filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.3)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.22));*/
+  }
+}
+
+
+/*===========================
+    04. bestCoimbra CSS 
+===========================*/
+
+.bestCoimbra-section {
+  /*filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.3)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.22));*/
+}
+
+.bestCoimbra-section .container-wrap {
+  background: #edfdff;
+  padding: 70px 0;
+  position: relative;
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
+  margin-top: 10px;
+}
+
+.bestCoimbra-section .bestCoimbra-img-wrapper {
+  left: 0;
+  width: 90%;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .bestCoimbra-section .bestCoimbra-img-wrapper {
+    width: 100%;
+  }
+  .bestCoimbra-section {
+    padding: 80px 0;
+  }
+  .bestCoimbra-section .container {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .bestCoimbra-section .container {
+    padding: 15px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bestCoimbra-section {
+    padding: 110px 0;
+  }
+  .bestCoimbra-section .container {
+    padding: 15px 0;
+  }
+  .bestCoimbra-section .bestCoimbra-content-wrapper .section-title h2 {
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .bestCoimbra-section {
+    padding: 70px 0;
+  }
+  .bestCoimbra-section .container-wrap {
+    clip-path: unset;
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bestCoimbra-section .bestCoimbra-img-wrapper {
+    position: relative;
+    top: 0;
+    width: 70%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bestCoimbra-section .bestCoimbra-img-wrapper {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.bestCoimbra-section .bestCoimbra-img-wrapper img {
+  width: 100%;
+}
+
+.bestCoimbra-section .bestCoimbra-content-wrapper .section-title h2 {
+  color: #0082b8;
+}
+
+.bestCoimbra-section .bestCoimbra-content-wrapper .bestCoimbra-content p {
+  margin-bottom: 15px;
+}
+
+
+/*===========================
+    05. Info CSS 
+===========================*/
+
+.info-section {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.info-section .info-wrapper h2 {
+  color: #0082b8;
+}
+
+.info-section .info-row {
+  margin-top: 20px;
+}
+
+.info-section .info-row .info-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.info-section .info-row .info-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  background: rgba(106, 124, 146, 0.1);
+  font-size: 45px;
+  color: #6A7C92;
+  margin-right: 15px;
+}
+
+.info-section .info-row .info-icon a:hover {
+  background: linear-gradient(110deg, #cede16 0%, #36bccb 100%);
+  color: #fff;
+}
+
+
+/*===========================
+    06. Gallery CSS 
+===========================*/
+
+.gallery {
+  margin-top: 110px;
+}
+
+.gallery .gallery-wrapper img {
+  transition: 0.3s;
+}
+
+.gallery .gallery-wrapper h2 {
+  color: #0082b8;
+}
+
+.gallery .gallery-wrapper h2:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 4px;
+  margin-top: 10px;
+  background-color: #bbde16;
+  margin-bottom: 15px;
+}
+
+.gallery .row {
+  justify-content: center;
+}
+
+.gallery .gallery-wrapper .row:hover img {
+  filter: grayscale(1);
+}
+
+.gallery .gallery-wrapper .row img {
+  margin-bottom: 1rem !important;
+}
+
+.gallery .gallery-wrapper .row img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.gallery .container-wrap {
+  padding: 15px;
+}
+
+.gallery .carousel-indicators button {
+  background: darkred;
+  height: 7px;
+  width: 100px;
+  border: 0;
+  border-radius: 10px;
+  transform: translateY(0.7rem);
+}
+
+
+/*===========================
+    07. Contacts CSS 
+===========================*/
+
+.contacts {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contacts .contacts-wrapper h2 {
+  color: #0082b8;
+}
+
+.contacts .contacts-wrapper h2:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 4px;
+  margin-top: 10px;
+  background-color: #bbde16;
+  margin-bottom: 15px;
+}
+
+.contacts .row {
+  justify-content: center;
+}
+
+.contacts .member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.contacts .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.contacts .member .member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/wave.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
+}
+
+.contacts .member .social {
+  position: absolute;
+  right: -100%;
+  top: 30%;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
 
 .contacts .member .social a {
   transition: color 0.3s;
@@ -565,13 +645,13 @@
 }
 
 .contacts .member .member-info h4:after {
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 24px;
-    height: 4px;
-    margin-top: 5px;
-    background-color: #bbde16;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 4px;
+  margin-top: 5px;
+  background-color: #bbde16;
 }
 
 .contacts .member .member-info span {
@@ -591,7 +671,7 @@
 
 .contacts .member:hover {
   transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  /*box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);*/
 }
 
 .contacts .member:hover .social {
@@ -599,64 +679,80 @@
   opacity: 1;
 }
 
-    /*===========================
-    06. Gallery CSS 
-    ===========================*/
-  .gallery{
-      margin-top: 110px;
-    }
 
-    .gallery .gallery-wrapper img{
-      transition: 0.3s;
-    }
+/*===========================
+    08. Call to Action CSS 
+===========================*/
 
-    .gallery .gallery-wrapper h2{
-      color: #0082b8;
-    }
+.call-action-section {
+  padding: 20px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  background-color: #edfdff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-    .gallery .gallery-wrapper h2:after {
-      content: '';
-      display: block;
-      margin: 0 auto;
-      width: 24px;
-      height: 4px;
-      margin-top: 10px;
-      background-color: #bbde16;
-      margin-bottom: 15px;
-    }
+.call-action-section .call-action-counter-wrapper {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
 
-    .gallery .row{
-      justify-content: center;
-      
-    }
+.call-action-section .call-action-counter-wrapper h2 {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 1em;
+  text-transform: uppercase;
+}
 
-    
-    .gallery .gallery-wrapper .row:hover img{
-     filter: grayscale(1);
-    }
-    .gallery .gallery-wrapper .row img{
-     margin-bottom: 1rem !important;
-    }
+.call-action-section .call-action-counter-wrapper h2 span {
+  display: block;
+  font-size: 4.5rem;
+}
 
-    /*
-    .gallery .gallery-wrapper .row:hover img{
-     filter: grayscale(1);
-    }*/
+.call-action-section .call-action-text-up-wrapper {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
 
-    .gallery .gallery-wrapper .row img:hover{
-     filter: grayscale(0);
-     transform: scale(1.1);
-    }
+.call-action-section .call-action-text-down-wrapper {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-    .gallery .container-wrap{
-      padding: 15px;
-    }
+.call-action-section .row {
+  justify-content: center;
+}
 
-    .gallery .carousel-indicators button{
-      background: darkred;
-      height: 7px;
-      width: 100px;
-      border: 0;
-      border-radius: 10px;
-      transform: translateY(0.7rem);
-    }
+.call-action-section .apply-btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 16px 48px;
+  font-size: 18px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  transition: all .4s ease-in-out;
+  border: none;
+  background: linear-gradient(130deg, #cede16 0%, #36bccb 60%);
+  background-size: 200% auto;
+  width: 50%;
+  overflow: hidden;
+}
+
+.call-action-section .apply-btn:hover,
+.hero-btn:focus {
+  background-position: right center;
+  color: #fff;
+}
