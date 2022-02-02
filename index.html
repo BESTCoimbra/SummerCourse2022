@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-    <!-- =========================================== Coding - remove after =========================================== -->
+      <!-- =========================================== Coding - remove after =========================================== -->
       <script type="text/javascript" src="https://livejs.com/live.js"></script>
       <!-- =========================================== Coding- remove after =========================================== -->
       <meta charset="utf-8">
@@ -13,10 +13,11 @@
       <!-- ========================= CSS ========================= -->
       <link rel="stylesheet" href="assets/css/all.min.css">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/css/animate.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/home.css">
       <link rel="stylesheet" href="assets/css/lightbox.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+      <!-- NEW -->
    </head>
    <body>
       <!-- =========================================== Preloader Start =========================================== -->
@@ -31,10 +32,10 @@
                <div class="col-lg-12">
                   <nav class="navbar navbar-expand-lg">
                      <a class="navbar-brand brand2" href="index.html">
-                     <img src="assets/img/logo.png" alt="Logo">
+                     <img src="assets/img/logo.png" alt="Logo BEST">
                      </a>
                      <a class="navbar-brand brand1" href="index.html">
-                     <img src="assets/img/logo2.png" alt="Logo">
+                     <img src="assets/img/logo2.png" alt="Logo Course">
                      </a>
                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="toggler-icon"></span>
@@ -47,22 +48,19 @@
                               <a class="page-scroll" href="#home">Home</a>
                            </li>
                            <li class="nav-item">
-                              <a class="page-scroll" href="#course">Course</a>
+                              <a class="page-scroll" href="#course_anchor">Course</a>
                            </li>
                            <li class="nav-item">
-                              <a class="page-scroll" href="#coimbra">Coimbra</a>
+                              <a class="page-scroll" href="#info_anchor">Info</a>
                            </li>
                            <li class="nav-item">
-                              <a class="page-scroll" href="#bestCoimbra">BEST</a>
+                              <a class="page-scroll" href="#gallery_anchor">Gallery</a>
                            </li>
                            <li class="nav-item">
-                              <a class="page-scroll" href="#bestCoimbra">Info</a>
+                              <a class="page-scroll" href="#best_anchor">BEST Coimbra</a>
                            </li>
                            <li class="nav-item">
-                              <a class="page-scroll" href="#bestCoimbra">Gallery</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="page-scroll" href="#contacts">Contacts</a>
+                              <button class="button-hero" role="button"><span class="text">Apply!</span></button>
                            </li>
                         </ul>
                      </div>
@@ -78,21 +76,17 @@
       <!-- =========================================== Navbar End =========================================== -->
       <!-- =========================================== Hero Start =========================================== -->
       <section id="home" class="hero-section">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-xl-5 col-lg-6">
-                  <div class="hero-content-wrapper">
-                     <h2 class="mb-25 wow fadeInDown" data-wow-delay=".2s">Summer Course</h2>
-                     <h1 class="mb-25 wow fadeInDown" data-wow-delay=".2s">The Science of a Smart Toaster</h1>
-                     <p class="wow fadeInLeft" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod orci sit amet lacus dignissim consequat. In hac habitasse platea dictumst.</p>
-                     <a href="javascript:void(0)" class="hero-btn">Apply Now!</a>
-                  </div>
+         <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5" data-aos="fade-right">
+               <div class="col-xl-5 col-lg-6 order-2 order-lg-1 hero-img">
+                  <img src="https://via.placeholder.com/800x800.png" class="d-block mx-lg-auto  " loading="lazy">
                </div>
-               <div class="col-xl-5 col-lg-6 col_test">
-                  <div class="hero-img">
-                     <div class="d-inline-block hero-img-right">
-                        <img src="https://via.placeholder.com/800x800.png" alt="" class="image wow fadeInRight" data-wow-delay=".5s">
-                     </div>
+               <div class="col-xl-7 col-lg-6  order-1 order-lg-2 hero-content-wrapper">
+                  <h2 class="mb-25">Summer Course</h2>
+                  <h1 class="mb-25 ">The Science of a Smart Toaster</h1>
+                  <p class="lead">Doggo ipsum heckin floofs doggorino shooberino bork, tungg aqua doggo. Very taste wow thicc long woofer, smol borking doggo with a long snoot for pats.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                     <button class="button-hero" role="button"><span class="text">Apply Now!</span></button>
                   </div>
                </div>
             </div>
@@ -101,105 +95,139 @@
       <!-- =========================================== Hero End =========================================== -->
       <!-- =========================================== Course Start =========================================== -->
       <section id="course" class="course-section">
-         <div class="container-wrap">
-            <div class="container">
-               <div class="row align-items-center">
-                  <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
-                     <div class="course-img-wrapper">
-                        <div class="course-img  d-inline-block wow fadeInLeft" data-wow-delay=".3s">
-                           <img src="https://via.placeholder.com/800x800.png" alt="">
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 order-1 order-lg-2">
-                     <div class="course-content-wrapper">
-                        <div class="section-title">
-                           <h2 class="wow fadeInRight" data-wow-delay=".4s">What is the course? 🤔</h2>
-                        </div>
-                        <div class="course-content wow fadeInUp" data-wow-delay=".6s">
-                           <p>Nowadays the day to day routine as well our lives are getting more and more automatized, that thanks to some of the great developments of our century like <b>Artificial Intelligence and Internet of Things.</b></p>
-                           <p>Since that the mobiles play a major role in our lives, the power to control everything with them, from the heating systems in our houses to the performance of our company <b>simplifies everything </b> in our life.</p>
-                           <p>This is allowed thanks to <b>IoT, and Industry 4.0</b> or smart houses are applications of this new network. Until now, we have worked with Internet which is a computer network, but IoT is the “new internet” connecting from our toaster to our alarm system, or the lines of production in factories.</p>
-                           <p>With this course, you will have the opportunity to build your basic system controlled by your phone, and you will also have the opportunity to learn the basics behind this technology. <b>What are you waiting for? Coimbra is waiting for you!</b></p>
-                        </div>
-                     </div>
-                  </div>
+         <a id="course_anchor" style="position:absolute; top:-90px;"></a>
+         <div class="container col-xxl-10 px-4 py-5">
+            <div class="containerbackground" data-aos="fade-down">Course</div>
+            <!-- ****************************************** Row 1 ****************************************** -->
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 course-row-1 reveal-holder" data-os="reveal-item">
+               <div class="reveal-block right" data-aos="reveal-right"></div>
+               <div class="col-xl-5 col-lg-6 order-2 order-lg-2 course-img">
+                  <img src="https://via.placeholder.com/825x500.png" class="d-block mx-lg-auto  " loading="lazy">
+               </div>
+               <div class="col-xl-7 col-lg-6  order-1 order-lg-1 course-content-wrapper">
+                  <h2 class="mb-2">What is a BEST course?</h2>
+                  <img src="assets/img//squiggle.svg" alt="">
+                  <p>Doggo ipsum very taste wow blop lotsa pats shoob <b>you are doin me a concern</b>, floofs ur givin me a spook. Porgo doggorino bork blep much ruin diet heckin good boys and girls, <b>sub woofer</b> much ruin diet blep. smol borking doggo with a long snoot for pats. Super chub smol I am bekom fat smol heckin angery woofer boof pats, <b>aqua doggo smol</b> borking doggo with a long snoot for <b>pats pupper</b> many pats puggorino. Vvv</p>
+               </div>
+            </div>
+            <!-- ****************************************** Row 2 ****************************************** -->
+            <div class="row  g-5 py-5 course-row-2 reveal-holder text-center" data-os="reveal-item">
+               <div class="reveal-block left" data-aos="reveal-left"></div>
+               <div class="col-lg-4 mb-0 mb-lg-0">
+                  <div class="course-icon mb-4"><a><i class="fas fa-users"></i></a></div>
+                  <h3>Target</h3>
+                  <p class="mb-0">Doggo ipsum thicc stop it fren you are doing me the shock puggo heckin angery woofer you are doin me a concern, mlem</p>
+               </div>
+               <div class="col-lg-4 mb-0 mb-lg-0">
+                  <div class="course-icon mb-4"><a><i class="fas fa-chart-line"></i></a></div>
+                  <h3>Self-Improvement</h3>
+                  <p class="mb-0">Doggo ipsum thicc stop it fren you are doing me the shock puggo heckin angery woofer you are doin me a concern, mlem</p>
+               </div>
+               <div class="col-lg-4">
+                  <div class="course-icon mb-4"><a><i class="fas fa-graduation-cap"></i></a></div>
+                  <h3>Learning</h3>
+                  <p class="mb-0">Doggo ipsum thicc stop it fren you are doing me the shock puggo heckin angery woofer you are doin me a concern, mlem</p>
+               </div>
+            </div>
+            <!-- ****************************************** Row 3 ****************************************** -->
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 course-row-3 reveal-holder" data-os="reveal-item">
+               <div class="reveal-block right" data-aos="reveal-right"></div>
+               <div class="col-xl-5 col-lg-6 order-2 order-lg-1 course-img">
+                  <img src="https://via.placeholder.com/825x500.png" class="d-block mx-lg-auto  " loading="lazy">
+               </div>
+               <div class="col-xl-7 col-lg-6  order-1 order-lg-2 course-content-wrapper ">
+                  <h2 class="mb-25">Our course...</h2>
+                  <img src="assets/img//squiggle.svg" alt="">
+                  <p>Doggo ipsum very taste wow blop lotsa pats shoob <b>you are doin me a concern</b>, floofs ur givin me a spook. Porgo doggorino bork blep much ruin diet heckin good boys and girls, <b>sub woofer</b> much ruin diet blep. smol borking doggo with a long snoot for pats. Super chub smol I am bekom fat smol heckin angery woofer boof pats, <b>aqua doggo smol</b> borking doggo with a long snoot for <b>pats pupper</b> many pats puggorino. Vvv</p>
+               </div>
+            </div>
+            <!-- ****************************************** Row 4 ****************************************** -->
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 course-row-4 reveal-holder" data-os="reveal-item">
+               <div class="reveal-block left" data-aos="reveal-left"></div>
+               <div class="col-xl-5 col-lg-6 order-2 order-lg-2 course-img">
+                  <img src="https://via.placeholder.com/825x500.png" class="d-block mx-lg-auto  " loading="lazy">
+               </div>
+               <div class="col-xl-7 col-lg-6  order-1 order-lg-1 course-content-wrapper">
+                  <h2 class="mb-25">...and our city</h2>
+                  <img src="assets/img//squiggle.svg" alt="">
+                  <p>Doggo ipsum very taste wow blop lotsa pats shoob <b>you are doin me a concern</b>, floofs ur givin me a spook. Porgo doggorino bork blep much ruin diet heckin good boys and girls, <b>sub woofer</b> much ruin diet blep. smol borking doggo with a long snoot for pats. Super chub smol I am bekom fat smol heckin angery woofer boof pats, <b>aqua doggo smol</b> borking doggo with a long snoot for <b>pats pupper</b> many pats puggorino. Vvv</p>
                </div>
             </div>
          </div>
       </section>
       <!-- =========================================== Course End =========================================== -->
-      <!-- =========================================== Coimbra Start =========================================== -->
-      <section id="coimbra" class="coimbra">
-         <div class="container">
-            <div class="row gx-0">
-               <div class="col-lg-6 d-flex flex-column justify-content-center" >
-                  <div class="content wow fadeInDown"  data-wow-delay=".8s">
-                     <h3>Coimbra</h3>
-                     <p>Coimbra is a Portuguese city in the center of the country. It is known by the <b>University of Coimbra, founded in the thirteenth century</b>, which <b>UNESCO</b> included in the list of <b>Word Heritage</b>. It’s the city of students, it lives from archaic traditions that connect those who live here to the pulsating history of this city.</p>
-                     <p><b>Coimbra was the capital</b> of the country until 1255 and has the <b>first Portuguese National Pantheon</b>, the Mosteiro de Santa Cruz.</p>
-                     <p>They say that those who pass by this city never forget, that it <b>“stays with us for life”</b>, where nostalgia, longing, friendship and joy, are words that transcend when we try to explain the beauty of this city.</p>
-                  </div>
-                  <img src="assets/img//dots.shape.svg" alt="" class="dot-shape wow fadeInLeft"  data-wow-delay=".8s">
-               </div>
-               <div class="col-lg-6  d-flex align-items-center wow fadeInRight image" data-wow-delay=".8s">
-                  <img src="assets/img/cabra_n.jpg" class="img-fluid" alt="">
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- =========================================== Coimbra End =========================================== -->
-      <!-- =========================================== BEST Coimbra Start =========================================== -->
-      <section id="bestCoimbra" class="bestCoimbra-section">
-         <div class="container-wrap">
-            <div class="container">
-               <div class="row align-items-center">
-                  <div class="col-xl-6 col-lg-6 order-2 order-lg-2">
-                     <div class="bestCoimbra-img-wrapper">
-                        <div class="bestCoimbra-img  d-inline-block wow fadeInLeft" data-wow-delay=".3s">
-                           <img src="https://via.placeholder.com/800x800.png" alt="">
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 order-1 order-lg-1">
-                     <div class="bestCoimbra-content-wrapper">
-                        <div class="section-title">
-                           <h2 class="wow fadeInRight" data-wow-delay=".4s">BEST Coimbra</h2>
-                        </div>
-                        <div class="bestCoimbra-content wow fadeInUp" data-wow-delay=".6s">
-                           <p>BEST-UC or <b>BEST Coimbra</b> it’s the LBG of the University of Coimbra, in activity <b>since 1992 at FCTUC</b> (Science and Technology Faculty). Since then, it’s our prime mission <b>promote our University all around Europe</b> and promote extra-curriculum development focused on a international mind to our students.</p>
-                           <p>Locally we offer them <b>Soft skills Workshops</b> and an approach with the job market with events, such as <b>jobs fairs</b>, <b>Company Days</b> or with <b>EBEC</b> – European BEST Engineering Competition – which are annual events.In an external panorama we offer cultural exchanges, educational courses trough all the BEST International network. Every year BEST Coimbra organizes a Summer Course – Late July, beginning of August- when we receive about <b>24 participants from all around Europe</b> and give them an unforgiven experience.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- =========================================== BEST Coimbra End =========================================== -->
       <!-- =========================================== Info Start =========================================== -->
-      <section class="info-section">
-         <div class="container">
-            <div class="info-wrapper">
-               <h2 class="text-center">Info</h2>
-               <div class="info-row">
-                  <div class="container px-5">
-                     <div class="row gx-5 text-center">
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                           <div class="info-icon mb-4"><a href="assets/pdf/SurvivalGuide.pdf" ><i class="fas fa-book"></i></a></div>
-                           <h3>Survival Guide</h3>
-                           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod orci sit amet lacus dignissim consequat.</p>
+      <section id="info" class="info-section">
+         <a id="info_anchor" style="position:absolute; top:-170px;"></a>
+         <div class="container col-xxl-10 px-4 py-5">
+            <div class="containerbackground" data-aos="fade-down">Info</div>
+            <!-- ****************************************** Row 1 ****************************************** -->
+            <div class="row  g-5 py-5 info-row-1 reveal-holder text-center" data-os="reveal-item">
+               <div class="reveal-block-white right" data-aos="reveal-right"></div>
+               <div class="col-lg-4 mb-0 mb-lg-0">
+                  <div class="info-icon mb-4"><a target="_blank" rel="noopener noreferrer" href="assets/pdf/SurvivalGuide.pdf" ><i class="fas fa-book"></i></a></div>
+                  <h3>Survival Guide</h3>
+                  <p class="mb-0">Doggo ipsum thicc stop it fren you are doing me the shock puggo heckin angery woofer you are doin me a concern, mlem</p>
+               </div>
+               <div class="col-lg-4 mb-0 mb-lg-0">
+                  <div class="info-icon mb-4"><a href="assets/img/schedule.jpg"  data-lightbox="image-1"><i class="far fa-calendar-alt"></i></a></div>
+                  <h3>Schedule</h3>
+                  <p class="mb-0">Doggo ipsum thicc stop it fren you are doing me the shock puggo heckin angery woofer you are doin me a concern, mlem</p>
+               </div>
+               <div class="col-lg-4 mb-0 mb-lg-0">
+                  <div class="info-icon mb-4"><a href="mailto:coimbra@best-eu.org"><i class="fas fa-envelope-open-text"></i></a></div>
+                  <h3>Contact Us</h3>
+                  <p class="mb-0">Doggo ipsum thicc stop it fren you are doing me the shock puggo heckin angery woofer you are doin me a concern, mlem</p>
+               </div>
+            </div>
+            <!-- ****************************************** Row 2 ****************************************** -->
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 info-row-2 contacts reveal-holder justify-content-center" data-os="reveal-item">
+               <div class="reveal-block-white left" data-aos="reveal-left"></div>
+               <div class="col-lg-3 col-md-6 d-flex align-items-stretch member_card">
+                  <div class="member">
+                     <div class="member-img">
+                        <img src="https://via.placeholder.com/600x600.png" class="img-fluid" alt="">
+                        <div class="social">
+                           <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                           <div class="info-icon mb-4"><a href="assets/img/schedule.jpg"  data-lightbox="image-1"><i class="far fa-calendar-alt"></i></a></div>
-                           <h3>Schedule</h3>
-                           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod orci sit amet lacus dignissim consequat.</p>
+                     </div>
+                     <div class="member-info">
+                        <h4>Inês Azevedo</h4>
+                        <img src="assets/img//squiggle.svg" alt="">
+                        <span>Main Organizer</span>
+                        <p>+351 123456789<br>email@gamil.com</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 d-flex align-items-stretch member_card">
+                  <div class="member">
+                     <div class="member-img">
+                        <img src="https://via.placeholder.com/600x600.png" class="img-fluid" alt="">
+                        <div class="social">
+                           <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <div class="col-lg-4">
-                           <div class="info-icon mb-4"><a href="mailto:coimbra@best-eu.org"><i class="fas fa-envelope-open-text"></i></a></div>
-                           <h3>Contact Us</h3>
-                           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod orci sit amet lacus dignissim consequat.</p>
+                     </div>
+                     <div class="member-info">
+                        <h4>Simão Simões</h4>
+                        <img src="assets/img//squiggle.svg" alt="">
+                        <span>Main Organizer</span>
+                        <p>+351 123456789<br>email@gamil.com</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 d-flex align-items-stretch member_card">
+                  <div class="member">
+                     <div class="member-img">
+                        <img src="https://via.placeholder.com/600x600.png" class="img-fluid" alt="">
+                        <div class="social">
+                           <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
+                     </div>
+                     <div class="member-info">
+                        <h4>Carolina Janeiro</h4>
+                        <img src="assets/img//squiggle.svg" alt="">
+                        <span>President</span>
+                        <p>+351 123456789<br>email@gamil.com</p>
                      </div>
                   </div>
                </div>
@@ -207,12 +235,47 @@
          </div>
       </section>
       <!-- =========================================== Info End =========================================== -->
-      <!-- =========================================== Gallery Start =========================================== -->
-      <section id="gallery" class="gallery">
-         <div class="container">
-            <div class="gallery-wrapper">
-               <h2 class="text-center">Gallery</h2>
-               <div id="carouselExampleSlidesOnly" class="carousel slide ">
+      <!-- =========================================== Call to Action Start =========================================== -->
+      <section id="call-action" class="call-action-section">
+         <div class="container col-xxl-10 px-4 py-5">
+            <div class="containerbackground" data-aos="fade-down">Apply</div>
+            <!-- ****************************************** Row 1 ****************************************** -->
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 call-action-row-1 reveal-holder" data-os="reveal-item">
+               <div class="reveal-block right" data-aos="reveal-right"></div>
+               <div class="row row1 align-items-center">
+                  <div class="call-action-text-up-wrapper">
+                     <h2>You only have</h2>
+                  </div>
+               </div>
+               <div class="row row2 align-items-center">
+                  <div class="call-action-counter-wrapper">
+                     <h2><span id="days"></span>Days</h2>
+                     <h2><span id="hours"></span>Hours</h2>
+                     <h2><span id="minutes"></span>Minutes</h2>
+                     <h2><span id="seconds"></span>Seconds</h2>
+                  </div>
+               </div>
+               <div class="row row3 align-items-center">
+                  <div class="call-action-text-down-wrapper">
+                     <h2>left to apply!</h2>
+                  </div>
+               </div>
+               <div class="row flex row4 align-items-center">
+                  <button class="button-hero" role="button"><span class="text">Apply Now!</span></button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =========================================== Call to Action End =========================================== -->
+      <!-- =========================================== Gallery/BEST Start =========================================== -->
+      <section id="gallery" class="gallery-best-section">
+         <a id="gallery_anchor" style="position:absolute; top:-170px;"></a>
+         <div class="container col-xxl-10 px-4 py-5">
+            <div class="containerbackground" data-aos="fade-down">Gallery</div>
+            <!-- ****************************************** Row 1 ****************************************** -->
+            <div class="row  g-5 py-5 gallery-best-row-1 reveal-holder text-center" data-os="reveal-item">
+               <div class="reveal-block-white left" data-aos="reveal-left"></div>
+               <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
                   <div class="carousel-indicators">
                      <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                      <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -276,97 +339,22 @@
                   </div>
                </div>
             </div>
-         </div>
-      </section>
-      <!-- =========================================== Gallery End =========================================== -->
-      <!-- =========================================== Call To Action Start =========================================== -->
-      <section class="call-action-section">
-         <div class="call-action-wrapper">
-            <div class="container">
-               <div class="row row1 align-items-center">
-                  <div class="call-action-text-up-wrapper">
-                     <h2>You still have</h2>
-                  </div>
+            <!-- ****************************************** Row 2 ****************************************** -->
+            <div id="best" class="row flex-lg-row-reverse align-items-center g-5 py-5 gallery-best-row-2 contacts reveal-holder justify-content-center" data-os="reveal-item">
+               <a id="best_anchor" style="position:absolute; top:-90px;"></a>
+               <div class="reveal-block-white right" data-aos="reveal-right"></div>
+               <div class="col-xl-5 col-lg-6 order-2 order-lg-1 best-img">
+                  <img src="https://via.placeholder.com/825x500.png" class="d-block mx-lg-auto  " loading="lazy">
                </div>
-               <div class="row row2 align-items-center">
-                  <div class="call-action-counter-wrapper">
-                     <h2><span id="days"></span>Days</h2>
-                     <h2><span id="hours"></span>Hours</h2>
-                     <h2><span id="minutes"></span>Minutes</h2>
-                     <h2><span id="seconds"></span>Seconds</h2>
-                  </div>
-               </div>
-               <div class="row row3 align-items-center">
-                  <div class="call-action-text-down-wrapper">
-                     <h2>left to apply!</h2>
-                  </div>
-               </div>
-               <div class="row row4 align-items-center">
-                  <a href="javascript:void(0)" class="apply-btn">Apply Now!</a>
+               <div class="col-xl-7 col-lg-6  order-1 order-lg-2 best-content-wrapper">
+                  <h2 class="mb-25">BEST Coimbra</h2>
+                  <img src="assets/img//squiggle.svg" alt="">
+                  <p>Doggo ipsum very taste wow blop lotsa pats shoob <b>you are doin me a concern</b>, floofs ur givin me a spook. Porgo doggorino bork blep much ruin diet heckin good boys and girls, <b>sub woofer</b> much ruin diet blep. smol borking doggo with a long snoot for pats. Super chub smol I am bekom fat smol heckin angery woofer boof pats, <b>aqua doggo smol</b> borking doggo with a long snoot for <b>pats pupper</b> many pats puggorino. Vvv</p>
                </div>
             </div>
          </div>
       </section>
-      <!-- =========================================== Call To Action End =========================================== -->
-      <!-- =========================================== Contact Start =========================================== -->
-      <section id="contacts" class="contacts">
-         <div class="container">
-            <div class="contacts-wrapper">
-               <h2 class="text-center">Useful contacts</h2>
-               <div class="row">
-                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                     <div class="member">
-                        <div class="member-img">
-                           <img src="https://via.placeholder.com/600x600.png" class="img-fluid" alt="">
-                           <div class="social">
-                              <a href=""><i class="fab fa-facebook-f"></i></a>
-                              <a href=""><i class="fab fa-linkedin-in"></i></a>
-                           </div>
-                        </div>
-                        <div class="member-info">
-                           <h4>Inês Azevedo</h4>
-                           <span>Main Organizer</span>
-                           <p>+351 123456789<br>email@gamil.com</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                     <div class="member">
-                        <div class="member-img">
-                           <img src="https://via.placeholder.com/600x600.png" class="img-fluid" alt="">
-                           <div class="social">
-                              <a href=""><i class="fab fa-facebook-f"></i></a>
-                              <a href=""><i class="fab fa-linkedin-in"></i></a>
-                           </div>
-                        </div>
-                        <div class="member-info">
-                           <h4>Simão Simões</h4>
-                           <span>Main Organizer</span>
-                           <p>+351 123456789<br>email@gamil.com</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                     <div class="member">
-                        <div class="member-img">
-                           <img src="https://via.placeholder.com/600x600.png" class="img-fluid" alt="">
-                           <div class="social">
-                              <a href=""><i class="fab fa-facebook-f"></i></a>
-                              <a href=""><i class="fab fa-linkedin-in"></i></a>
-                           </div>
-                        </div>
-                        <div class="member-info">
-                           <h4>Carolina Janeiro</h4>
-                           <span>President</span>
-                           <p>+351 123456789<br>email@gamil.com</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- =========================================== Contact End =========================================== -->
+      <!-- =========================================== Gallery/BEST End =========================================== -->
       <!-- =========================================== Footer Start =========================================== -->
       <footer class="footer ">
          <div class="container">
@@ -388,7 +376,6 @@
                            <li><a href="https://www.facebook.com/BESTCoimbra"><i class="fab fa-facebook-f"></i></a></li>
                            <li><a href="https://www.linkedin.com/company/11337545/"><i class="fab fa-linkedin-in"></i></a></li>
                            <li><a href="https://www.instagram.com/bestcoimbra/"><i class="fab fa-instagram"></i></a></li>
-                           <li><a href="https://www.instagram.com/bestcoimbra/"><i class="fab fa-tiktok"></i></a></li>
                         </ul>
                      </div>
                   </div>
@@ -403,11 +390,19 @@
       </a>
       <!-- ========================= JS ========================= -->
       <script src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
-      <script src="assets/js/wow.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- Add -->
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/lightbox.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+         AOS.init({
+           offset:300,
+           duration: 500,
+           easing: 'ease-out-quart',
+           once: true
+         });
+      </script>
       <!-- ========================= JS ens ========================= -->
    </body>
 </html>

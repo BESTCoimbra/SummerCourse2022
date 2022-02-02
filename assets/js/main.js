@@ -33,13 +33,6 @@
 		navbarToggler.classList.toggle("active");
 	})
 
-	//WOW Scroll Spy
-	var wow = new WOW({
-		//disabled for mobile
-		mobile: false
-	});
-	wow.init();
-
 })();
 
 
@@ -53,14 +46,14 @@
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
-              distance = countDown - now;
+             distance = countDown - now;
 
         document.getElementById("days").innerText = Math.floor(distance / (day)),
           document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
           document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
           document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
+       // do something later when date is reached
         if (distance < 0) {
           document.getElementById("days").innerText = 0,
           document.getElementById("hours").innerText = 0,
@@ -68,7 +61,7 @@
           document.getElementById("seconds").innerText = 0,
           clearInterval(x);
         }
-        //seconds
+        seconds
       }, 0)
   }());
 
