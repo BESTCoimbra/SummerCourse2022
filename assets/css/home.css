@@ -10,7 +10,7 @@
   font-weight: 700;
   /*font-size: 25px;*/
   line-height: 50px;
-  color: #AF40FF;
+  color: var(--green-theme);
   margin-bottom: 0;
 }
 
@@ -60,6 +60,9 @@ only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
   padding-top: 14rem;
   padding-bottom: 1rem;
+ /* background-image: url("../img/pattern.svg");
+  background-position: center;
+  background-size: cover;*/
 }
 
 .course-section .container .containerbackground {
@@ -200,7 +203,7 @@ only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   left: 0;
   bottom: 0;
   z-index: 0;
-  color: #f2f0ff;
+  color: #A7C95740;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -228,7 +231,7 @@ only screen and (min-width: 1200px) and (max-width: 1399.98px) {
 }
 
 .info-section .info-icon a:hover {
-  background: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  background: linear-gradient(144deg, var(--green-theme), var(--blue-theme));
   color: #fff;
 }
 
@@ -257,6 +260,7 @@ only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   background: url(../img/wave.svg) no-repeat center bottom;
   background-size: contain;
   z-index: 0;
+  width: 102%;
 }
 
 .info-section .contacts .member .social {
@@ -280,7 +284,7 @@ only screen and (min-width: 1200px) and (max-width: 1399.98px) {
 }
 
 .info-section .contacts .member .social a:hover {
-  color: #af40ff;
+  color: var(--green-theme);
 }
 
 .info-section .contacts .member .social i {
@@ -593,7 +597,7 @@ only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   left: 0;
   bottom: 0;
   z-index: -1;
-  color: #f2f0ff;
+  color: #A7C95740;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -639,7 +643,7 @@ only screen and (min-width: 1200px) and (max-width: 1399.98px) {
 }
 
 .gallery-best-section .gallery-best-row-1 .carousel-indicators button {
-  background: #af40ff;
+  background: var(--green-theme);
   height: 7px;
   width: 100px;
   border: 0;

@@ -2,10 +2,7 @@
     01. Common CSS
     ===========================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-/*@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300;400;500;600;700;800&display=swap');*/
-
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600;700&display=swap');
 
 /*html {
   scroll-snap-type: y mandatory;
@@ -13,11 +10,14 @@
 }*/
 
 body {
-  /*font-family: 'Grandstander', cursive;*/
-  font-family: "Poppins", sans-serif;
+  font-family:'Advent Pro', sans-serif;
   font-weight: normal;
   font-style: normal;
   background-color: #ffff;
+
+  --yellow-theme: #F9DA82;
+  --green-theme: #A7C957;
+  --blue-theme: #04BFBF;
 }
 
 * {
@@ -125,7 +125,7 @@ ol {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 26px;
   color: #505962;
@@ -171,7 +171,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #af40ff;
+  background: var(--green-theme);
   /*block color*/
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -219,7 +219,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #af40ff;
+  background: var(--green-theme);
   /*block color*/
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -349,7 +349,7 @@ p {
 
 .button-hero {
   align-items: center;
-  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  background-image: linear-gradient(144deg, var(--green-theme), var(--blue-theme));
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -375,7 +375,7 @@ p {
 }
 
 .button-hero span {
-  background-color: rgb(5, 6, 45);
+  background-color: var(--blue-theme);
   padding: 16px 24px;
   border-radius: 6px;
   width: 100%;
@@ -404,7 +404,7 @@ p {
 .section-title span {
   font-size: 25px;
   font-weight: 700;
-  color: #0082b8;
+  color: var(--blue-theme);
   margin-bottom: 5px;
 }
 
@@ -436,7 +436,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #AF40FF;
+  background: var(--green-theme);
   text-align: center;
   line-height: 45px;
   font-size: 20px;
@@ -451,7 +451,7 @@ p {
 }
 
 .scroll-top:hover {
-  background: #0082b8;
+  background: var(--blue-theme);
   color: #fff;
 }
 
@@ -570,7 +570,7 @@ p {
 }
 
 .navbar-nav .nav-item:hover a {
-  color: #AF40FF;
+  color: var(--green-theme);
   /*Color Hover navbar*/
 }
 
@@ -612,7 +612,7 @@ p {
 }
 
 .navbar-nav .nav-item a.active {
-  color: #AF40FF;
+  color: var(--green-theme);
   /*Color Active navbar*/
 }
 
@@ -744,7 +744,7 @@ p {
 }
 
 .footer-social ul li a:hover {
-  background: linear-gradient(110deg, #cede16 0%, #AF40FF 100%);
+  background: linear-gradient(110deg, var(--green-theme) 0%, var(--blue-theme) 100%);
   color: #fff;
 }
 
