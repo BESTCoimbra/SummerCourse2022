@@ -2,15 +2,16 @@
     01. Common CSS
     ===========================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600;700&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600;700&display=swap');*/
+@import url('https://fonts.cdnfonts.com/css/phenomena');
 /*html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }*/
 
 body {
-  font-family:'Advent Pro', sans-serif;
+ /* font-family:'Advent Pro', sans-serif;*/
+  font-family: 'Phenomena', sans-serif;
   font-weight: normal;
   font-style: normal;
   background-color: #ffff;
@@ -153,6 +154,7 @@ p {
   position: relative;
   display: flex;
   overflow: hidden;
+  /*background-color: red;*/
 }
 
 .reveal-holder .reveal-block {

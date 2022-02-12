@@ -42,7 +42,7 @@
         hour = minute * 60,
         day = hour * 24;
   
-  const countDown = new Date("Jun 10, 2022 00:00:01").getTime(),
+ const countDown = new Date('Mar 11, 2022 23:00:00 +0100').getTime(),
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
